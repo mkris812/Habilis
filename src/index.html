@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Preloader</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,200..900;1,8..60,200..900&display=swap" rel="stylesheet">
+    <style>
+        /* Preloader styles */
+        
+
+        /* Loading animation */
+        #preloader h1 {
+        
+            animation: fade-in 2s linear infinite;
+        }
+
+        @keyframes fade-in {
+            0% {
+                opacity: 0.5;
+            }
+
+            50% {
+                opacity: 1;
+            }
+
+            100% {
+                opacity: 0.5;
+            }
+        }
+    </style>
+</head>
+
+<body class="font-serif">
+    <div id="preloader">
+        <div class="bg-yellow-300 h-64 w-64 fixed -right-36 top-44 rounded-full"></div>
+    <div class="relative flex flex-col justify-center items-center top-40">
+        <img class="" src="../img/logo.png" alt="">
+        <h1 class="mt-10 font-serif font-bold text-3xl">Habilis</h1>
+        <h1 class="mt-2 text-xl">Democratizing Market Research</h1>
+    </div>
+    <div class="bg-gray-300 rounded-full absolute top-96 -left-16 h-40 w-40"></div>
+    <div class="absolute bottom-16 -left-10 h-40 w-40">
+        <img src="../img/img1.png" alt="">
+    </div>
+    <div class="fixed flex flex-col justify-center items-center w-full  bottom-10">
+        <h1>CultureLabs Consumer Connect</h1>
+    </div>
+    </div>
+
+    <!-- Content to be displayed after preloading -->
+   
+
+    <!-- JavaScript for preloading -->
+    <script>
+        // Hide the content initially
+        document.querySelector('body').style.visibility = 'hidden';
+        document.querySelector('#preloader').style.visibility = 'visible';
+
+        // Redirect to slider.html after 3 seconds
+        setTimeout(() => {
+            window.location.href = 'slider.html';
+        }, 3000);
+    </script>
+</body>
+
+</html>

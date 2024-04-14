@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <style>
+        .swiper {
+            width: 100vw;
+            height: 90vh;
+            position: absolute;
+        }
+        /* Add any other necessary styles */
+    </style>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,200..900;1,8..60,200..900&display=swap" rel="stylesheet">
+</head>
+<body class="font-serif">
+
+    <!-- Slider main container -->
+<div class="swiper">
+    <!-- Additional required wrapper -->
+    <div class="swiper-wrapper">
+      <!-- Slides -->
+      <div class="swiper-slide">
+        <div>
+            <div class="relative pl-10 top-10 ">
+        <div class="flex-row  gap-8  flex">
+            <h1 class="mt-10 font-serif font-bold text-2xl">Learn & Get Certified</h1>
+            <img class="w-10 h-10" src="../img/logo.png" alt="">
+        </div>
+        </div>
+        <div class="relative flex flex-col justify-center items-center top-40">
+            <div class="h-60 w-60 shadow-xl shadow-yellow-200 bg-yellow-300 p-5 rounded-3xl">
+                <img class="" src="../img/s3.png" alt="">
+            </div>
+        </div>
+        <div class="fixed flex flex-col px-8  justify-center items-center w-full  bottom-48">
+            <a class="bg-yellow-300 text-white font-semibold py-2 px-5 rounded-2xl shadow-xl hover:bg-yellow-600" href="tearms.html">Get start</a>
+        </div>
+        <div class="fixed flex flex-col px-8  justify-center items-center w-full  bottom-32">
+            <h1>We train you regularly and certify your skills, so you can work effectively.  </h1>
+        </div>
+        </div>
+      </div>
+      <div class="swiper-slide">
+        <div>
+            <div class="relative pl-10 top-10 ">
+        <div class="flex-row  gap-8  flex">
+            <h1 class="mt-10 font-serif font-bold text-2xl">Get Certified</h1>
+            <img class="w-10 h-10" src="../img/logo.png" alt="">
+        </div>
+        </div>
+        <div class="relative flex flex-col justify-center items-center top-40">
+            <div class="h-60 w-60 shadow-xl shadow-yellow-200 bg-yellow-300 p-5 rounded-3xl">
+                <img class="" src="../img/s2.png" alt="">
+            </div>
+        </div>
+        <div class="fixed flex flex-col px-8  justify-center items-center w-full  bottom-48">
+            <a class="bg-yellow-300 text-white font-semibold py-2 px-5 rounded-2xl shadow-xl hover:bg-yellow-600" href="tearms.html">Get start</a>
+        </div>
+        <div class="fixed flex flex-col px-8  justify-center items-center w-full  bottom-32">
+            <h1>We train you regularly and certify your skills, so you can work effectively.  </h1>
+        </div>
+        </div>
+      </div>
+      <div class="swiper-slide">
+        <div>
+            <div class="relative pl-10 top-10 ">
+        <div class="flex-row  gap-8  flex">
+            <h1 class="mt-10 font-serif font-bold text-2xl">Learn &</h1>
+            <img class="w-10 h-10" src="../img/logo.png" alt="">
+        </div>
+        </div>
+        <div class="relative flex flex-col justify-center items-center top-40">
+            <div class="h-60 w-60 shadow-xl shadow-yellow-200 bg-yellow-300 p-5 rounded-3xl">
+                <img class="" src="../img/s1.png" alt="">
+            </div>
+        </div>
+        <div class="fixed flex flex-col px-8  justify-center items-center w-full  bottom-48">
+            <a class="bg-yellow-300 text-white font-semibold py-2 px-5 rounded-2xl shadow-xl hover:bg-yellow-600" href="tearms.html">Get start</a>
+        </div>
+        <div class="fixed flex flex-col px-8  justify-center items-center w-full  bottom-32">
+            <h1>We train you regularly and certify your skills, so you can work effectively.  </h1>
+        </div>
+        </div>
+      </div>
+  
+    </div>
+    <!-- If we need pagination -->
+    <div class="swiper-pagination text-yellow-300"></div>
+
+    <!-- If we need navigation buttons -->
+    <div class="fixed flex w-full px-5 z-50 justify-between top-96 ">
+    <div class="swiper-prev swiper-next bg-yellow-300 text-white p-1 rounded-full drop-shadow-xl hover:scale-125 transform delay-100 ease-in-out"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 19.5 8.25 12l7.5-7.5" />
+      </svg>
+      </div>
+    <div class="swiper-next bg-yellow-300 text-white p-1 rounded-full drop-shadow-xl hover:scale-125 transform delay-100 ease-in-out"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+        <path stroke-linecap="round" stroke-linejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5" />
+      </svg>
+      </div>
+    </div>
+    
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script>
+    const swiper = new Swiper('.swiper', {
+        direction: 'horizontal', // Change the direction to 'horizontal'
+        loop: true,
+
+        // If we need pagination
+        pagination: {
+            el: '.swiper-pagination',
+        },
+
+        // Navigation arrows
+        navigation: {
+            nextEl: '.swiper-next',
+            prevEl: '.swiper-prev',
+        },
+    });
+</script>
+</body>
+</html>
